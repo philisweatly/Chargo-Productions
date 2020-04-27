@@ -1,0 +1,14 @@
+{
+  "name": "chargo-productions",
+  "version": "1.0.0",
+  "description": "Website Rebuild",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css"
+  },
+  "author": "Phil Smith",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}

@@ -1,0 +1,326 @@
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 1rem;
+  }
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: 1.4;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar-brand {
+  width: 120rem;
+}
+
+.header {
+  height: 80vh;
+  background-image: url(../../Public/Images/homepage.jpg);
+  background-position: 0 80%;
+  background-size: cover;
+  position: relative;
+}
+
+.header__box {
+  position: absolute;
+  top: 36%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.header__text--main {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.header__text--sub {
+  font-size: 1.5rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  color: lightgrey;
+  padding: 0.5rem;
+  text-transform: lowercase;
+  transition: all .3s;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn--block:hover {
+  background-color: rgba(255, 165, 0, 0.486);
+  color: #818080;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+  .cards__item--3 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+
+.card__image--fence {
+  background-image: url(../../Public/Images/patio.jpg);
+}
+
+.card__image--river {
+  background-image: url(../../Public/Images/yard.jpg);
+}
+
+.card__image--record {
+  background-image: url(../../Public/Images/coast.jpg);
+}
+
+.card__title {
+  color: darkgrey;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.about {
+  position: relative;
+  margin-top: -3rem;
+}
+
+.about__textbox--mission {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-top: 3rem;
+}
+
+.about__textbox--h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.about__textbox--about {
+  text-align: center;
+  margin: 1rem;
+  position: relative;
+}
+
+.cards {
+  position: relative;
+}
+
+.about:before {
+  content: "";
+  background-image: url(../../Public/Images/about-beach.jpg);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.contact {
+  padding-top: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.contact__textbox {
+  font-size: calc(1em + 2vw);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.contact__text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  font-weight: 300;
+}
+
+.contact__phone {
+  padding: 1rem;
+}
+
+.contact__link {
+  display: block;
+  color: orange;
+  text-decoration: none;
+  border-bottom: 2px solid orange;
+}
+
+.contact__image {
+  opacity: .3;
+  width: 100%;
+}
+
+.links {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  width: 100%;
+  color: orange;
+}
+
+@media (min-width: 941px) {
+  .links {
+    font-size: 5vw;
+  }
+  .links .links__icon {
+    padding: 0 5rem;
+  }
+}
+
+.links__icon {
+  list-style: none;
+  display: inline;
+  padding: 1.5rem;
+}
+/*# sourceMappingURL=main.css.map */

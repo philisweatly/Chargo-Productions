@@ -1,0 +1,29 @@
+.header {
+    height: 80vh;
+    background-image: url(../../Public/Images/homepage.jpg);
+    background-position: 0 80%;
+    background-size: cover;
+    position: relative;
+    // clip-path: ellipse(80% 67% at 50% 40%);
+    
+    &__box {
+        position: absolute;
+        top: 36%;
+        left:38%;
+        transform: translate(-50%, -50%);
+
+        
+    }
+
+    &__text--main {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    &__text--sub {
+        font-size: 1.5rem;;
+    }
+    
+}
+    
+
