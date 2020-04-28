@@ -16,11 +16,12 @@
 
     &__text {
        position: absolute;
-       top: 20%;
+       top: 14%;
        left: 50%;
        transform: translate(-50%, -50%);
-       font-size: 5vw;
+       font-size: 3.7vw;
        font-weight: 300;
+       max-width: 560px;
     }
 
     &__phone {

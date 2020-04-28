@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-   <div class="header">
+    <div class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Our Shows
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Santa Barbara</a>
+                  <a href="#">Santa Maria</a>
+                </div>
+              </div>
+            <a href="#contact">Vendors</a>
+            <a href="#news">About</a>
+            <a href="#news">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
         <div class="header__box">
            <div class="header__box--text">
                <h1 class="header__text--main">Chargo Home&nbsp;Show Productions</h1>
@@ -101,6 +117,7 @@
     
     
     <script src="https://kit.fontawesome.com/8d6f98c0f6.js" crossorigin="anonymous"></script>    
+    <script src="index.js"></script>
 </body>
 </html>
 
